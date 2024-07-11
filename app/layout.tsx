@@ -1,3 +1,7 @@
+import '@/app/ui/global.css';
+// 引入字体类
+import {inter} from './ui/fonts';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +9,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+        {/* 添加字体类 */}
+        <body className={inter.className}>{children}</body>
     </html>
   );
 }
